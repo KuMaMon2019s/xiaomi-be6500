@@ -46,6 +46,7 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
     nvram commit
   
 - 执行以下代码，添加自动开启 SSH 端口指令
+  
     mkdir /data/auto_ssh && cd /data/auto_ssh
     curl -O https://fastly.jsdelivr.net/gh/lemoeo/AX6S@main/auto_ssh.sh
     chmod +x auto_ssh.sh
@@ -63,9 +64,11 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
 Clash安装源：
 
 export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
+
 备用安装源：
 
 export url='https://gh.jwsc.eu.org/master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
+
 Clash管理地址： http://192.168.31.1:9999/ui/ (如果打不开请按Ctrl+F5 刷新)
 
 ### 第六步：对shellclash配置
