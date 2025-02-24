@@ -58,7 +58,7 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
 
 
 ### 第五步：安装ShellClash
-视频教程：<a href="https://youtu.be/Z9hr7bGhA7M“>https://youtu.be/Z9hr7bGhA7M>查看 </a>
+视频教程： https://youtu.be/Z9hr7bGhA7M
 
 Clash安装源：
 
