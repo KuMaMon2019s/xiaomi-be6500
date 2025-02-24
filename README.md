@@ -31,30 +31,43 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
   echo -e 'admin\nadmin' | passwd root
 
 - 通过SSH登录
- <img width="850" alt="image" src="https://github.com/user-attachments/assets/0e2f672e-fd99-46f4-9460-1a2f5a2e3a45" />
+  
+    <img width="850" alt="image" src="https://github.com/user-attachments/assets/0e2f672e-fd99-46f4-9460-1a2f5a2e3a45" />
+ 
   登录成功：
-  <img width="853" alt="image" src="https://github.com/user-attachments/assets/60595eb3-b21c-412f-9662-d9fb57e4137e" />
+  
+    <img width="853" alt="image" src="https://github.com/user-attachments/assets/60595eb3-b21c-412f-9662-d9fb57e4137e" />
 
 
 ### 第四步：固化SSH
 - 用SSH工具登录路由器后分别执行以下指令，每次执行指令后路由器会重启。
 
     nvram set ssh_en=1
+  
     nvram set telnet_en=1
+  
     nvram set uart_en=1
+  
     nvram set boot_wait=on
+  
     nvram commit
   
 - 执行以下代码，添加自动开启 SSH 端口指令
   
     mkdir /data/auto_ssh && cd /data/auto_ssh
+  
     curl -O https://fastly.jsdelivr.net/gh/lemoeo/AX6S@main/auto_ssh.sh
+  
     chmod +x auto_ssh.sh
 
     uci set firewall.auto_ssh=include
+  
     uci set firewall.auto_ssh.type='script'
+  
     uci set firewall.auto_ssh.path='/data/auto_ssh/auto_ssh.sh'
+  
     uci set firewall.auto_ssh.enabled='1'
+  
     uci commit firewall
 
 
