@@ -12,6 +12,8 @@
 ### 第二步：解锁SSH
 Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <code>终端</code> ，输入下列代码开启小米路由器 BE6500 的SSH功能。<br>
 请将 <STOK> 替换成 stok 码，注意：每次登录路由器后台 stok 码会改变；<IP>修改为目前网络的IPV4 IP 地址，默认为 192.168.31.1。，如果IP不正确的话，shell会返回 {"code":401,"msg":"invalid token"}
+![image](https://github.com/user-attachments/assets/4ca93655-0ef9-421a-9b7e-cf15eb7c5033)
+
     
     curl -X POST http://<IP>/cgi-bin/luci/;stok=<STOK>/api/xqsystem/start_binding -d "uid=1234&key=1234'%0Anvram%20set%20ssh_en%3D1'"
     
@@ -27,7 +29,13 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
 - 更改SSH登录密码，执行以下指令：（修改之后的用户名是：root，密码是：admin）
 
   echo -e 'admin\nadmin' | passwd root
-  
+
+- 通过SSH登录
+ <img width="850" alt="image" src="https://github.com/user-attachments/assets/0e2f672e-fd99-46f4-9460-1a2f5a2e3a45" />
+  登录成功：
+  <img width="853" alt="image" src="https://github.com/user-attachments/assets/60595eb3-b21c-412f-9662-d9fb57e4137e" />
+
+
 ### 第四步：固化SSH
 - 用SSH工具登录路由器后分别执行以下指令，每次执行指令后路由器会重启。
 
@@ -36,6 +44,8 @@ Windows用户可使用 <code>命令提示符</code> 、MacOS用户可使用 <cod
     nvram set uart_en=1
     nvram set boot_wait=on
     nvram commit
+  
+- 执行以下代码，添加自动开启 SSH 端口指令
     mkdir /data/auto_ssh && cd /data/auto_ssh
     curl -O https://fastly.jsdelivr.net/gh/lemoeo/AX6S@main/auto_ssh.sh
     chmod +x auto_ssh.sh
@@ -58,9 +68,8 @@ export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && sh -c "$
 export url='https://gh.jwsc.eu.org/master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
 Clash管理地址： http://192.168.31.1:9999/ui/ (如果打不开请按Ctrl+F5 刷新)
 
-### 第六步：导入订阅
-- 下载并安装 clash 内核
-- 选择 在线生成配置文件
-- 粘贴 订阅地址，然后shellclash会生成相应的配置文件
-- 安装 面板
-- 完成安装
+### 第六步：对shellclash配置
+![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _00](https://github.com/user-attachments/assets/81e336cb-dac9-4255-9429-279eafbf726f)
+![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _01](https://github.com/user-attachments/assets/d52d9aba-7576-4f69-bc8e-58d8ff378c27)
+![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _02](https://github.com/user-attachments/assets/42cfb985-0727-43e7-9ba8-6eda8bfa649c)
+![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _03](https://github.com/user-attachments/assets/3be1ed49-d595-4223-b972-30b3c1a862a7)
