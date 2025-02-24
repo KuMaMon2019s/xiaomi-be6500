@@ -69,7 +69,7 @@ export url='https://gh.jwsc.eu.org/master' && sh -c "$(curl -kfsSl $url/install.
 Clash管理地址： http://192.168.31.1:9999/ui/ (如果打不开请按Ctrl+F5 刷新)
 
 ### 第六步：对shellclash配置
-![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _00](https://github.com/user-attachments/assets/81e336cb-dac9-4255-9429-279eafbf726f)
-![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _01](https://github.com/user-attachments/assets/d52d9aba-7576-4f69-bc8e-58d8ff378c27)
-![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _02](https://github.com/user-attachments/assets/42cfb985-0727-43e7-9ba8-6eda8bfa649c)
-![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _03](https://github.com/user-attachments/assets/3be1ed49-d595-4223-b972-30b3c1a862a7)
+![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _00](https://github.com/user-attachments/assets/69bbbb14-5a38-4ec9-b160-c20341952b31)
+![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _01](https://github.com/user-attachments/assets/48bba106-b1be-46f4-8c56-83a930417f5b)
+![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _02](https://github.com/user-attachments/assets/ceab306b-422d-4396-b256-0236e73ee506)
+![FireShot Capture 063 - 草东日记 - 小米路由器BE6500 Pro · 解锁SSH 启用科学上网 -  www gaicas com _03](https://github.com/user-attachments/assets/b7096e1b-c692-4b1e-a505-a4733d691574)
